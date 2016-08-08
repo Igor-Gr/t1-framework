@@ -11,6 +11,16 @@ class Migrate
     
     const MIGRATIONS_NAMESPACE = 'Migrations';
 
+    public function actionDefault()
+    {
+        $this->actionUp();
+    }
+
+    public function actionUp()
+    {
+        //
+    }
+
     public function actionCreate($name, $namespace = [])
     {
         $className = "m_" . time() . "_" . $name;
