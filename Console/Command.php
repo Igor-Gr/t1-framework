@@ -4,10 +4,11 @@ namespace Console;
 
 abstract class Command
 {
-    final public function action($action)
+    final public function action($action, $params = [])
     {
         $methodName = 'action' . $action;
-        return $this->$methodName();
+        $options = $params;
+        return $this->$methodName($options[0], $options[1]);
     }
 
     protected function writeLn($msg)

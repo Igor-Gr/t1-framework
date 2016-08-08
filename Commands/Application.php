@@ -18,6 +18,7 @@ class Application
     public function actionHelp()
     {
         $this->writeLn('commands list:');
+        $this->writeLn('migrate/create - create a new migration');
         $this->writeLn('create/test');
     }
 }

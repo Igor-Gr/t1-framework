@@ -45,9 +45,15 @@ class Application
         } else {
              $this->actionName = 'Default';
          }
+        if (!empty($arguments[2])) {
+            $options = [];
+            for ($i = 2; $i < count($arguments); $i++) {
+                $options[] = $arguments[$i];
+            }
+        }
         $commandClass = self::COMMANDS_PATH . $this->commandName;
         $command = new $commandClass();
-        $command->action($this->actionName);
+        $command->action($this->actionName, $options);
     }
     
     
