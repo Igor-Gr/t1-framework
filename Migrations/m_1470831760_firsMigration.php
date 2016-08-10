@@ -2,7 +2,7 @@
 
 namespace Migrations;
 
-use Orm\Migration;
+use Mvc\Migration;
 
 class m_1470831760_firsMigration
     extends Migration
