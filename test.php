@@ -2,7 +2,7 @@
 
 require __DIR__ . '/autoload.php';
 
-$db = \Mvc\Model::getDbConnection();
+$db = \Orm\Model::getDbConnection();
 
 /*class User {
 
@@ -11,6 +11,14 @@ $db = \Mvc\Model::getDbConnection();
 $a = $db->query('SELECT * FROM users', 'User');
 var_dump($a);*/
 
-echo 2334;
+var_dump($db->getDriver());
+$a = [
+    '__id' => ['type' => 'pk'],
+    'time' => ['type' => 'int']
+];
+
+foreach ($a as $k => $v) {
+    echo $k;
+}
 
 

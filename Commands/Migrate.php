@@ -3,12 +3,14 @@
 namespace Commands;
 
 use Console\Command;
+use Core\Exception;
 use Fs\Helpers;
 
 class Migrate
     extends Command
 {
-    
+
+    const TABLE_NAME = '__migrations';
     const MIGRATIONS_NAMESPACE = 'Migrations';
 
     public function actionDefault()
@@ -18,7 +20,35 @@ class Migrate
 
     public function actionUp()
     {
-        //
+        try {
+            if (!$this->isInstalled()) {
+                $this->install();
+            }
+        } catch (\PDOException $e) {
+            throw  new Exception($e->getMessage());
+        }
+    }
+
+    protected function isInstalled()
+    {
+        $connection = \Orm\Model::getDbConnection();
+        $driver = $connection->getDriver();
+        return $driver->existsTable($connection, self::TABLE_NAME);
+    }
+
+    protected function install()
+    {
+        $connection = \Orm\Model::getDbConnection();
+        $driver = $connection->getDriver();
+        $driver->createTable($connection, self::TABLE_NAME,
+            [
+                '__id' => ['type' => 'serial'],
+                'time' => ['type' => 'int']
+            ],
+            [
+
+            ]
+        );
     }
 
     public function actionCreate($name, $namespace = [])

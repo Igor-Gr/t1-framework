@@ -3,7 +3,7 @@
 namespace protect\Controllers;
 
 use Core\Session;
-use Mvc\Controller;
+use Orm\Controller;
 
 class Index
     extends Controller

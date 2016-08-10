@@ -45,6 +45,19 @@ class Connection
     }
 
     /**
+     * @return string
+     */
+    public function getDriverName()
+    {
+        return (string)$this->config->driver;
+    }
+    
+    public function getDriver()
+    {
+        return DriverFactory::getDriver($this->getDriverName());
+    }
+
+    /**
      * @param string $query
      * @param array $params
      * @return bool
@@ -62,12 +75,22 @@ class Connection
      * @param array $params
      * @return array
      */
-    public function query($query, $class, array $params = [])
+    public function queryClass($query, $class, array $params = [])
     {
         $sth = $this->pdo->prepare($query);
         $result = $sth->execute($params);
         if ($result !== false) {
             return $sth->fetchAll(\PDO::FETCH_CLASS, $class);
+        }
+        return [];
+    }
+
+    public function query($query, array $params = [])
+    {
+        $sth = $this->pdo->prepare($query);
+        $result = $sth->execute($params);
+        if ($result !== false) {
+            return $sth->fetchAll();
         }
         return [];
     }

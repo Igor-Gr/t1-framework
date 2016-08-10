@@ -1,6 +1,6 @@
 <?php
 
-namespace Mvc;
+namespace Orm;
 
 
 abstract class Model

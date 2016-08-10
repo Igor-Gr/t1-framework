@@ -2,6 +2,6 @@
 
 require __DIR__ . '/autoload.php';
 
-\Mvc\Application
+\Orm\Application
 	::instance()
 		->run();
