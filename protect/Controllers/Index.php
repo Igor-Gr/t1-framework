@@ -2,8 +2,8 @@
 
 namespace protect\Controllers;
 
-use Core\Session;
-use Mvc\Controller;
+use Elision\Core\Session;
+use Elision\Mvc\Controller;
 
 class Index
     extends Controller
