@@ -1,6 +1,6 @@
 <?php
 
-namespace Elision\Dbal;
+namespace Elision\Db;
 
 
 class DriverFactory

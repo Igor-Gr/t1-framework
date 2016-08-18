@@ -2,7 +2,7 @@
 
 namespace Elision\Auth;
 
-abstract class Identity
+class DbAuth
 {
 
    

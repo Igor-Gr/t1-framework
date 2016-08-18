@@ -68,11 +68,11 @@ class {$className}
     extends Migration
 {
 
-    public function up()
+    web function up()
     {
     }
 
-    public function down()
+    web function down()
     {
     }
     

@@ -50,6 +50,7 @@ var model = {
         var request = ajax.getXmlHttpRequest();
         request.onreadystatechange = function () {
             if (request.readyState != 4) return;
+            alert(request.responseText);
             if (callback && typeof callback === 'function') {
                 callback(request.responseText);
             }
@@ -64,7 +65,7 @@ var controller = {
     
     handleClick: function (event) {
         var fieldsAndValues = model.getFormFields(event);
-        model.senRequest(fieldsAndValues, 'http://t1/test.php');
+        model.senRequest(fieldsAndValues, 'http://t1/index/signup');
         return false;
     }
     

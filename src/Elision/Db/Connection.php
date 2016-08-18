@@ -1,11 +1,13 @@
 <?php
 
-namespace Elision\Dbal;
+namespace Elision\Db;
 
 use Elision\Core\Config;
 use Elision\Core\Exception;
+use Elision\Orm\ActiveRecord;
 
 class Connection
+    extends ActiveRecord
 {
 
     /**
