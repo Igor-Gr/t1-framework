@@ -44,7 +44,10 @@ class Model
         for ($i = 0; $i < count($val); $i++) {
             if ($val[$i][0] == false && !is_null($val[$i][0])) {
                 $result[] = 'Err';
-                Errors::$errors[] = Message::parseMessages($val[$i][1][0], $val[$i][2], $val[$i][3]);
+                $message = $val[$i][1][0];
+                $value = $val[$i][2];
+                $fieldName = $val[$i][3];
+                Errors::$errors[] = Message::parseMessages($message, $value, $fieldName);
             }
         }
 
@@ -54,8 +57,8 @@ class Model
             return false;
         }
 
-
     }
+
 
     /**
      * Массив установок для валидации полей форм.

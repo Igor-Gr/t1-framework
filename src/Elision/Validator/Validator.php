@@ -9,7 +9,9 @@ class Validator
 
     public $builtInValidators = [
         'string' => 'Elision\Validator\StringValidator',
-        'email' => 'Elision\Validator\EmailValidator'
+        'email' => 'Elision\Validator\EmailValidator',
+        'required' => 'Elision\Validator\RequiredValidator',
+        'coincidence' => 'Elision\Validator\CoincidenceValidator'
     ];
 
     public function createValidator($type, $model, $attributes, $params = [])
@@ -37,5 +39,15 @@ class Validator
                 return $v;
             }
         }
+    }
+
+    public function parseFieldName($filed, $params)
+    {
+        foreach ($params as $k => $v) {
+            if ($k == $filed) {
+                return $v;
+            }
+        }
+        return false;
     }
 }

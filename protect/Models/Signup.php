@@ -12,15 +12,19 @@ class Signup
     public $login;
     public $email;
     public $password;
+    public $password_2;
 
     public function setting()
     {
         return [
 
-            [['email', 'password'], 'required'],
-            ['login', 'string', 'min' => 5, 'max' => 10, 'field' => 'Логин'],
+            [['login', 'email', 'password'], 'required', 'login' => 'Логин', 'email' => 'Е-маил', 'password' => 'Пароль'],
+            ['login', 'string', 'min' => 5, 'max' => 10, 'login' => 'Логин'],
             ['email', 'email'],
-            ['password', 'string', 'min' => 6, 'max' => 10, 'field' => 'Пароль']
+            ['password', 'string', 'min' => 6, 'max' => 10, 'password' => 'Пароль'],
+            [['password', 'password_2'], 'coincidence', 'fields' => 'Пароли'],
+            ['login', 'unique'],
+            ['email', 'unique']
 
         ];
     }

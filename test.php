@@ -64,3 +64,9 @@ echo $newStr;*/
 use Elision\Helpers\Html;
 
 echo Html::submitButton('Кнопка', ['class' => 'btn lol_new_class', 'id' => 'lol']);
+
+$patern = '/^[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/';
+
+$p = preg_match($patern, 'nomidkkfefef@dwdwdw.ru');
+
+echo $p;

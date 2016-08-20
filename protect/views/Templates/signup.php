@@ -4,7 +4,8 @@
     <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 
-<?= $error; ?>
+<p class="bg-danger"><?= $error; ?></p>
+<p class="bg-success"></p>
 
 <div class="container">
     <div class="row">

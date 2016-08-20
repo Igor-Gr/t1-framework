@@ -29,9 +29,13 @@ class StringValidator
     public function validate($model, $attributes, $params = [])
     {
 
-        if (isset($params['field'])) {
-            $this->field = $params['field'];
+        $attributeName = '';
+
+        for ($i = 0; $i < count($attributes); $i++) {
+            $attributeName = $attributes[$i];
         }
+
+        $this->field = $this->parseFieldName($attributeName, $params) ?: $attributes[0];
 
         if (isset($attributes[0]) && !isset($attributes[1])) {
             $value = $this->getValue($model, $attributes[0]);

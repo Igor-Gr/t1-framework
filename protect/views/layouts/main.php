@@ -10,7 +10,7 @@
 <body>
 <?= $content; ?>
 
-
+<script src="/web/assets/js/jquery-3.1.0.min.js"></script>
 <script src="/web/assets/js/bootstrap.min.js"></script>
 </body>
 </html>
