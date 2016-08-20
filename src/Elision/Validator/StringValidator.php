@@ -10,11 +10,28 @@ class StringValidator
 
 
     public $message = [];
-
+    public $value;
     public $valid = true;
+    public $field;
 
+    /**
+     * Возвращает  массив с четырьмя значениями:
+     * булево true or false, проша валидация или нет,
+     * шаблон сообщения для дальнейшей обратоки,
+     * значение которое не прошло валидацию, для дальнейшей подстановки в шаблон сообщения,
+     * и имя поля так же для подстановки в шаблон.
+     *
+     * @param $model
+     * @param $attributes
+     * @param array $params
+     * @return array
+     */
     public function validate($model, $attributes, $params = [])
     {
+
+        if (isset($params['field'])) {
+            $this->field = $params['field'];
+        }
 
         if (isset($attributes[0]) && !isset($attributes[1])) {
             $value = $this->getValue($model, $attributes[0]);
@@ -33,7 +50,7 @@ class StringValidator
                                $this->message[] = $params['message'];
                            else $this->message[] = 'min_error';
                            $this->valid = false;
-
+                           $this->value = $v;
                        }
                         break;
                     case 'max':
@@ -43,7 +60,7 @@ class StringValidator
                                 $this->message[] = $params['message'];
                             else $this->message[] = 'max_error';
                             $this->valid =  false;
-
+                            $this->value = $v;
                         }
                     break;
                 }
@@ -52,7 +69,9 @@ class StringValidator
 
         return [
             $this->valid,
-            $this->message
+            $this->message,
+            $this->value,
+            $this->field
         ];
     }
 

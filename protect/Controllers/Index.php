@@ -3,6 +3,8 @@
 namespace protect\Controllers;
 
 use Elision\Http\Request;
+use Elision\Messages\Errors;
+use Elision\Messages\Message;
 use Elision\Mvc\Controller;
 use protect\Models\Signup;
 
@@ -12,7 +14,7 @@ class Index
 	
 	public function actionDefault()
 	{
-		$this->view->display('Index.php');
+		$this->view->display('Index.php', ['title' => 'Главная']);
 	}
 
 	public function actionSignup()
@@ -23,9 +25,15 @@ class Index
 			Request::setFormValuesInClassAttributes($model);
 
 			$model->validate();
+			$error = Errors::showErrors();
 		}
 
-		$this->view->display('signup.php');
+		$this->view->display('signup.php', ['title' => 'Регестрация', 'error' => $error]);
+	}
+
+	public function actionBoot()
+	{
+		$this->view->display('bootstrap.php', ['title' => 'Главная']);
 	}
 	
 }

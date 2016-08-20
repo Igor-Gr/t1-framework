@@ -37,3 +37,30 @@ $user->password = '24dddfffff23hthr82';*/
 
 $sign->validate();*/
 
+/*class MyError
+{
+
+    public $errors = [];
+
+    public function showErrors(){
+        return array_shift($this->errors);
+    }
+}
+
+
+
+$err = new MyError();
+$err->errors[] = 'lol';
+$err->errors[] = 'lol1';
+
+echo $err->showErrors();*/
+
+/*$str = "Логин не должен превышать @ символов";
+$a = 5;
+
+$newStr = str_replace("@", $a, $str);
+echo $newStr;*/
+
+use Elision\Helpers\Html;
+
+echo Html::submitButton('Кнопка', ['class' => 'btn lol_new_class', 'id' => 'lol']);

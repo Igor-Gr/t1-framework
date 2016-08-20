@@ -18,8 +18,9 @@ class Signup
         return [
 
             [['email', 'password'], 'required'],
+            ['login', 'string', 'min' => 5, 'max' => 10, 'field' => 'Логин'],
             ['email', 'email'],
-            ['password', 'string', 'min' => 5, 'max' => 10]
+            ['password', 'string', 'min' => 6, 'max' => 10, 'field' => 'Пароль']
 
         ];
     }
