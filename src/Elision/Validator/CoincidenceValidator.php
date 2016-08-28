@@ -2,13 +2,15 @@
 
 namespace Elision\Validator;
 
+use Elision\Messages\Errors;
+use Elision\Messages\Message;
 
 class CoincidenceValidator
     extends Validator
 {
 
 
-    public $message = [];
+    public $message;
     public $field;
     public $valid = true;
     public $value;
@@ -28,15 +30,11 @@ class CoincidenceValidator
         $val = array_unique($values);
 
         if (count($val) !== 1) {
-            $this->message[] = 'do_not_match';
+            $this->message = 'do_not_match';
             $this->valid = false;
+            Errors::$errors[] = Message::parseMessages($this->message, [], $this->field);
         }
 
-        return [
-            $this->valid,
-            $this->message,
-            $this->value,
-            $this->field
-        ];
+        return $this->valid;
     }
 }

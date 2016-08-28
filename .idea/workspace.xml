@@ -2,16 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9bedced-4719-4fb2-83d2-af74eba7cb0d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protect/Models/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Elision/Auth/IdentityInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Elision/Http/Response.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Elision/Validator/UniqueValidator.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Elision/Auth/DbAuth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Elision/Auth/Register.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Elision/Validator/UniqueValliator.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/protect/Models/User.php" afterPath="$PROJECT_DIR$/protect/Models/Users.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autoload.php" afterPath="$PROJECT_DIR$/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protect/Controllers/Index.php" afterPath="$PROJECT_DIR$/protect/Controllers/Index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protect/Models/Signup.php" afterPath="$PROJECT_DIR$/protect/Models/Signup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protect/config.php" afterPath="$PROJECT_DIR$/protect/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protect/views/Templates/index.php" afterPath="$PROJECT_DIR$/protect/views/Templates/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protect/views/Templates/signup.php" afterPath="$PROJECT_DIR$/protect/views/Templates/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protect/views/layouts/main.php" afterPath="$PROJECT_DIR$/protect/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Messages/messages.php" afterPath="$PROJECT_DIR$/src/Elision/Messages/messages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Auth/Identity.php" afterPath="$PROJECT_DIR$/src/Elision/Auth/Identity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Core/Config.php" afterPath="$PROJECT_DIR$/src/Elision/Core/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Core/Std.php" afterPath="$PROJECT_DIR$/src/Elision/Core/Std.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Db/Connection.php" afterPath="$PROJECT_DIR$/src/Elision/Db/Connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Db/Drivers/Mysql.php" afterPath="$PROJECT_DIR$/src/Elision/Db/Drivers/Mysql.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Db/QueryBuilder.php" afterPath="$PROJECT_DIR$/src/Elision/Db/QueryBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Http/Request.php" afterPath="$PROJECT_DIR$/src/Elision/Http/Request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Mvc/Application.php" afterPath="$PROJECT_DIR$/src/Elision/Mvc/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Mvc/Controller.php" afterPath="$PROJECT_DIR$/src/Elision/Mvc/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Orm/ActiveRecord.php" afterPath="$PROJECT_DIR$/src/Elision/Orm/ActiveRecord.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Orm/Model.php" afterPath="$PROJECT_DIR$/src/Elision/Orm/Model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Validator/CoincidenceValidator.php" afterPath="$PROJECT_DIR$/src/Elision/Validator/CoincidenceValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Validator/EmailValidator.php" afterPath="$PROJECT_DIR$/src/Elision/Validator/EmailValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Validator/RequiredValidator.php" afterPath="$PROJECT_DIR$/src/Elision/Validator/RequiredValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Validator/StringValidator.php" afterPath="$PROJECT_DIR$/src/Elision/Validator/StringValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/Validator/Validator.php" afterPath="$PROJECT_DIR$/src/Elision/Validator/Validator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Elision/autoload.php" afterPath="$PROJECT_DIR$/src/Elision/autoload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
     </list>
     <ignored path="t1.iws" />
@@ -28,48 +51,27 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="t1" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Signup.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protect/Models/Signup.php">
+      <file leaf-file-name="Lc.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protect/Models/Lc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UniqueValliator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Elision/Validator/UniqueValliator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Validator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Elision/Validator/Validator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Elision/Messages/messages.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="170">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#35#57#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,57 +92,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Elision/Orm/Migration.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Core/Config.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Dbal/Connection.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Mvc/Application.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Mvc/Router.php" />
-        <option value="$PROJECT_DIR$/console.php" />
-        <option value="$PROJECT_DIR$/autoload.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Console/Application.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Dbal/Drivers/Mysql.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Commands/Migrate.php" />
-        <option value="$PROJECT_DIR$/protect/Templates/index.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Validator/emailValidator.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Validator/LengthValidator.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Validator/passwordValidator.php" />
-        <option value="$PROJECT_DIR$/protect/Models/signup.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Auth/Identity.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Auth/DbAuth.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Auth/Register.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Db/Connection.php" />
-        <option value="$PROJECT_DIR$/protect/Models/User.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Db/Drivers/Mysql.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Db/QueryBuilder.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Orm/ActiveRecord.php" />
-        <option value="$PROJECT_DIR$/protect/config.php" />
         <option value="$PROJECT_DIR$/src/Elision/Modules/Spl.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Http/Request.php" />
         <option value="$PROJECT_DIR$/public/js/ajaxForm.js" />
         <option value="$PROJECT_DIR$/protect/Templates/signup.php" />
         <option value="$PROJECT_DIR$/test3.php" />
         <option value="$PROJECT_DIR$/test2.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Mvc/View.php" />
         <option value="$PROJECT_DIR$/src/Elision/Messages/Error.php" />
         <option value="$PROJECT_DIR$/src/Elision/Messages/Errors.php" />
         <option value="$PROJECT_DIR$/src/Elision/Helpers/Html.php" />
-        <option value="$PROJECT_DIR$/protect/Controllers/Index.php" />
         <option value="$PROJECT_DIR$/protect/views/templates/bootstrap.php" />
-        <option value="$PROJECT_DIR$/protect/views/templates/index.php" />
         <option value="$PROJECT_DIR$/src/Elision/Messages/Message.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Validator/StringValidator.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Validator/RequiredValidator.php" />
-        <option value="$PROJECT_DIR$/protect/views/templates/signup.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Messages/messages.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Validator/UniqueValliator.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Validator/UniqueValiator.php" />
         <option value="$PROJECT_DIR$/protect/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/src/Elision/Validator/Validator.php" />
         <option value="$PROJECT_DIR$/src/Elision/Validator/CoincidenceValidator.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Orm/Model.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/src/Elision/Validator/EmailValidator.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Validator/UniqueValliator.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Validator/RequiredValidator.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Validator/StringValidator.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Validator/UniqueValidator.php" />
+        <option value="$PROJECT_DIR$/protect/Models/Login.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Auth/IdentityInterface.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Mvc/Application.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Http/Response.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Http/Request.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Helpers/Helpers.php" />
+        <option value="$PROJECT_DIR$/protect/Models/Balance.php" />
         <option value="$PROJECT_DIR$/protect/Models/Signup.php" />
-        <option value="$PROJECT_DIR$/src/Elision/Messages/messages.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Auth/Identity.php" />
+        <option value="$PROJECT_DIR$/protect/Models/Configg.php" />
+        <option value="$PROJECT_DIR$/protect/Models/Config.php" />
+        <option value="$PROJECT_DIR$/protect/views/templates/lc.php" />
+        <option value="$PROJECT_DIR$/protect/views/templates/signup.php" />
+        <option value="$PROJECT_DIR$/protect/views/templates/login.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Mvc/Controller.php" />
+        <option value="$PROJECT_DIR$/autoload.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Mvc/View.php" />
+        <option value="$PROJECT_DIR$/protect/Controllers/Index.php" />
+        <option value="$PROJECT_DIR$/protect/views/templates/index.php" />
+        <option value="$PROJECT_DIR$/protect/Models/Users.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Orm/ActiveRecord.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Db/Drivers/Mysql.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Db/QueryBuilder.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Db/Connection.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Core/Config.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Orm/Model.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Core/Std.php" />
+        <option value="$PROJECT_DIR$/protect/config.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/protect/Models/Lc.php" />
+        <option value="$PROJECT_DIR$/src/Elision/Web/Images.php" />
       </list>
     </option>
   </component>
@@ -155,10 +157,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="336" />
-    <option name="y" value="22" />
-    <option name="width" value="1490" />
-    <option name="height" value="985" />
+    <option name="x" value="332" />
+    <option name="y" value="12" />
+    <option name="width" value="1400" />
+    <option name="height" value="1001" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -185,8 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,100 +202,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elision" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elision" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Validator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elision" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Messages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,13 +239,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yii2.local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../image" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -347,11 +256,11 @@
       <recent name="C:\OpenServer\OpenServer\domains\t1\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\OpenServer\domains\t1\files" />
       <recent name="C:\OpenServer\OpenServer\domains\t1\protect\views" />
       <recent name="C:\OpenServer\OpenServer\domains\t1\src\Elision" />
       <recent name="C:\OpenServer\OpenServer\domains\t1\Framework" />
       <recent name="C:\OpenServer\OpenServer\domains\t1" />
-      <recent name="C:\OpenServer\OpenServer\domains\t1\framework" />
     </key>
   </component>
   <component name="RunManager">
@@ -452,6 +361,15 @@
       <workItem from="1471708136720" duration="469000" />
       <workItem from="1471709255514" duration="126000" />
       <workItem from="1471714823845" duration="5640000" />
+      <workItem from="1471724672229" duration="11277000" />
+      <workItem from="1471737829173" duration="59000" />
+      <workItem from="1471772398339" duration="7486000" />
+      <workItem from="1471794297409" duration="23358000" />
+      <workItem from="1471984278884" duration="14989000" />
+      <workItem from="1472155965604" duration="3746000" />
+      <workItem from="1472203360411" duration="14154000" />
+      <workItem from="1472293225304" duration="27515000" />
+      <workItem from="1472395573406" duration="14882000" />
     </task>
     <task id="LOCAL-00001" summary="v4">
       <created>1470689961671</created>
@@ -464,16 +382,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243251000" />
+    <option name="totallyTimeSpent" value="360717000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="336" y="22" width="1490" height="985" extended-state="0" />
+    <frame x="332" y="12" width="1400" height="1001" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25944057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2947761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296837" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24965034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3244186" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -509,139 +427,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Elision/Auth/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Auth/Identity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Auth/DbAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Commands/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Commands/Migrate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Db/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Db/Drivers/Mysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mvc.start3/App/Models/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="108" column="47" selection-start-line="108" selection-start-column="47" selection-end-line="108" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Db/QueryBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="425" column="9" selection-start-line="425" selection-start-column="9" selection-end-line="425" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Modules/Spl.php" />
-    <entry file="file://$PROJECT_DIR$/src/Elision/Orm/ActiveRecord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/ajaxForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="58" column="86" selection-start-line="58" selection-start-column="86" selection-end-line="58" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mvctest/application/controllers/controller_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mvctest/application/core/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Mvc/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Торент/[Специалист] РНР. Уровень 4. Проектирование и разработка сложных веб-проектов на РНР 5 Борисов 2016/doc/php-4-files/demo/mvc/application/models/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protect/config.php">
+    <entry file="file://$PROJECT_DIR$/src/Elision/Messages/Errors.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test3.php" />
-    <entry file="file://$PROJECT_DIR$/src/Elision/Fs/Helpers.php">
+    <entry file="file://$PROJECT_DIR$/src/Elision/Auth/IdentityInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.php" />
-    <entry file="file://$PROJECT_DIR$/src/Elision/Mvc/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -652,17 +449,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Mvc/Application.php">
+    <entry file="file://$PROJECT_DIR$/src/Elision/Core/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="458">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protect/Models/User.php">
+    <entry file="file://$PROJECT_DIR$/src/Elision/Mvc/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Http/Response.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Fs/Helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Auth/Identity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Http/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/views/templates/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/views/templates/lc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/views/templates/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Mvc/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Mvc/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Mvc/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../repost/repo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/views/templates/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/Models/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -673,66 +574,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mvc.start3/App/Templates/login.php">
+    <entry file="file://$PROJECT_DIR$/src/Elision/Db/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+          <folding>
+            <marker date="1472326202007" expanded="true" signature="2182:2196" ph="SELECT * FRO... ${qb}" />
+            <marker date="1472326202007" expanded="true" signature="2182:2221" ph="SELECT * FRO... WHERE" />
+            <marker date="1472326202007" expanded="true" signature="2871:2885" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1472326202007" expanded="true" signature="2955:2969" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1472326202007" expanded="true" signature="4170:4184" ph="SELECT * FRO... ${$table}" />
+            <marker date="1472326202007" expanded="true" signature="4413:4425" ph="INSERT INTO ${$table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Orm/ActiveRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/Models/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#35#70#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/Models/Balance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Core/Std.php">
+    <entry file="file://$PROJECT_DIR$/src/Elision/Db/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="532">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Core/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Mvc/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Messages/Errors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1529">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/bootstrap-theme.min.css">
+    <entry file="file://$PROJECT_DIR$/src/Elision/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protect/views/templates/index.php">
+    <entry file="file://$PROJECT_DIR$/View.php" />
+    <entry file="file://$PROJECT_DIR$/src/Elision/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protect/views/templates/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -740,128 +649,165 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protect/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Http/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protect/views/templates/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protect/Controllers/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Orm/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#32#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Messages/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Validator/RequiredValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Validator/CoincidenceValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Validator/StringValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Validator/EmailValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Validator/UniqueValliator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Validator/Validator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elision/Messages/messages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protect/Models/Signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="490">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Helpers/Helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/Controllers/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Core/ISingleton.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Db/DriverFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Orm/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Core/TSingleton.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Core/Std.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/19f8ab34_161767491.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/19f8ab34_PN201002-02_300dpi.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/19f8ab34_3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/19f8ab34__CoO3MiuKjA.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/19f8ab34_001.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Core/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/Models/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/19f8ab34_dVAsEBdKgaM.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Db/Drivers/Mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="153" column="22" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
+          <folding>
+            <marker date="1472326202058" expanded="true" signature="685:698" ph="CREATE TABLE... ${$tableName}" />
+            <marker date="1472326202058" expanded="true" signature="1657:1710" ph="SELECT * FRO... ${$tableName}" />
+            <marker date="1472326202058" expanded="true" signature="1953:2071" ph="INSERT INTO ${$tableName}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <marker date="1472417411092" expanded="true" signature="2109:2113" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elision/Web/Images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protect/Models/Lc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#35#57#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

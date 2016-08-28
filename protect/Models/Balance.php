@@ -5,9 +5,10 @@ namespace protect\Models;
 
 use Elision\Orm\ActiveRecord;
 
-class User
+class Balance
     extends ActiveRecord
 {
-    
 
+    public $client_id;
+    public $balance;
 }

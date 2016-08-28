@@ -110,22 +110,30 @@ class Mysql
 
     public function saveColumns($model)
     {
+
+        if (method_exists($model, tableName)) {
+            $tableName = $model->tableName();
+        } else {
+            $tableName = $model->getClassName();
+        }
+
         $pdoFields = [];
         $pdoValues = [];
 
-        $colums = '';
+        $columns = '';
         $sets = '';
 
         foreach ($model as $k => $v) {
+            if (empty($v)) continue;
             $sets .= ':' . $k . ',';
-            $colums .= $k . ',';
+            $columns .= $k . ',';
             $pdoFields[] = $k;
             $pdoValues[] = $v;
         }
         $sets = substr($sets, 0, -1);
-        $colums = substr($colums, 0, -1);
+        $columns = substr($columns, 0, -1);
 
-        $values = '('. $colums .') VALUES ('. $sets .')';
+        $values = '('. $columns .') VALUES ('. $sets .')';
 
 
         $pdoData = $this->psrsePdoArray($pdoFields, $pdoValues);
@@ -133,14 +141,76 @@ class Mysql
         $connection = \Elision\Orm\Model::getDbConnection();
 
         $sql = new QueryBuilder();
-        $sql->insert($model->getClassName())
+        $sql->insert($tableName)
             ->values($values);
-        $connection->execute($sql, $pdoData);
+        return $connection->execute($sql, $pdoData);
     }
 
     public function save($model)
     {
-        $this->saveColumns($model);
+       return $this->saveColumns($model);
+    }
+    
+    public function update($model, $options)
+    {
+        $model->deleteWorkingPropertys($model);
+
+        $modelFields = $this->parseModelProperties($model);
+        $tableName = $model->getClassName();
+        $parseOptions = $model->parseQuery($options);
+
+
+        $sql = 'UPDATE ' . $tableName . ' SET ' . $modelFields['fields'] . ' WHERE ' . $parseOptions['fields'];
+
+        $connection = \Elision\Orm\Model::getDbConnection();
+        
+        $result = $connection->execute($sql, array_merge($modelFields['pdo'], $parseOptions['pdo']));
+
+        return $result;
+    }
+
+    /**
+     * Парсит свойства модели и если у свойства есть значение возращает их в стиле PDO
+     *
+     * Возвращает массив с двумя массивами, первый имена свойств (они же имена полей в таблице) ['имя=:имя'],
+     * второй PDO массив подстановок [':имя' => значение]
+     *
+     * @param $model
+     * @return array
+     */
+    public function parseModelProperties($model)
+    {
+        $fields = '';
+        $pdo = [];
+
+        foreach ($model as $field => $value) {
+            if (empty($value)) continue;
+            $fields .= $field . '=:' . $field . ',';
+            $pdo[':'.$field] = $value;
+        }
+
+        $fields = substr($fields, 0, -1);
+
+        return [
+            'fields' => $fields,
+            'pdo' => $pdo
+        ];
+    }
+
+    public function all($connection, $sql, $model, $asArray, $pdo = [])
+    {
+        if ($asArray == true) {
+            if (isset($pdo)) $result = $connection->query($sql, $pdo);
+            else $result = $connection->query($sql);
+        } else {
+            if (isset($pdo)) $result = $connection->queryClass($sql, $model, $pdo);
+            else $result = $connection->queryClass($sql, $model);
+        }
+        if (!empty($result[0]) && empty($result[1])) {
+            return $result[0] ?: [];
+        } else {
+            return $result ?: [];
+        }
     }
 
 }

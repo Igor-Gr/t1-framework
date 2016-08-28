@@ -4,12 +4,15 @@
 namespace Elision\Validator;
 
 
+use Elision\Messages\Errors;
+use Elision\Messages\Message;
+
 class RequiredValidator
     extends Validator
 {
 
 
-    public $message = [];
+    public $message;
     public $field;
     public $valid = true;
     public $value;
@@ -28,16 +31,13 @@ class RequiredValidator
 
         foreach ($attributeValues as $k => $v) {
             if (empty($v)) {
-                $this->message[] = 'empty_value';
+                $this->message = 'empty_value';
                 $this->valid = false;
                 if (!empty($params)) $this->field = $this->parseFieldName($k, $params);
                 else $this->field = $k;
-                return [
-                    $this->valid,
-                    $this->message,
-                    $this->value,
-                    $this->field
-                ];
+                Errors::$errors[] = Message::parseMessages($this->message, [], $this->field);
+
+                return $this->valid;
             }
         }
 

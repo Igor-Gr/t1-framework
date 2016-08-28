@@ -24,6 +24,13 @@ class Std
 
     protected function innerSet($key, $val)
     {
-        $this->$key = $val;
+        if (is_array($val)) {
+            foreach ($val as $k => $v) {
+                $this->$k = $v;
+            }
+        }
+
+        if (!is_array($val))
+       $this->$key = $val;
     }
 }

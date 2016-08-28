@@ -5,6 +5,9 @@ namespace Elision\Core;
 class Config
     extends Std
 {
+    
+    public static $init;
+    
     /**
      * @param array|string|null $data
      * @throws \Elision\Core\Exception
@@ -33,5 +36,12 @@ class Config
         }
 
         return $this->fromArray(include($path));
+    }
+    
+    public static function getConfig()
+    {
+        if (self::$init == null)
+            self::$init = new Config('protect/config.php');
+        return self::$init;
     }
 }

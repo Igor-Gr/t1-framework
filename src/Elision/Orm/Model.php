@@ -2,9 +2,8 @@
 
 namespace Elision\Orm;
 
-
-use Elision\Messages\Errors;
-use Elision\Messages\Message;
+use Elision\Db\Connection;
+use Elision\Core\Config;
 use Elision\Validator\Validator;
 
 class Model
@@ -21,7 +20,7 @@ class Model
     public static function getDbConnection()
     {
         if (static::$connection == null) {
-            static::$connection = new \Elision\Db\Connection(new \Elision\Core\Config('protect/config.php'));
+            static::$connection = new Connection(Config::getConfig());
         }
         return static::$connection;
     }
@@ -39,24 +38,13 @@ class Model
     public function validate()
     {
         $val = $this->createValidators();
-        $result = [];
 
-        for ($i = 0; $i < count($val); $i++) {
-            if ($val[$i][0] == false && !is_null($val[$i][0])) {
-                $result[] = 'Err';
-                $message = $val[$i][1][0];
-                $value = $val[$i][2];
-                $fieldName = $val[$i][3];
-                Errors::$errors[] = Message::parseMessages($message, $value, $fieldName);
+        foreach ($val as $v) {
+            if ($v === false) {
+                return false;
             }
         }
-
-        if (empty($result)) {
-            return true;
-        } else {
-            return false;
-        }
-
+        return true;
     }
 
 
@@ -80,15 +68,17 @@ class Model
 
     public function createValidators()
     {
-        $objetArray = [];
+        $objectArray = [];
+        
         foreach ($this->setting() as $setting) {
             if ($setting instanceof Validator) {
                 // Включаем валидатор
             } elseif (is_array($setting) && isset($setting[0], $setting[1])) {
                 $validator = new Validator();
-                $objetArray[] = $validator->createValidator($setting[1], $this, (array) $setting[0], array_slice($setting, 2));
+                $objectArray[] = $validator->createValidator($setting[1], $this, (array) $setting[0], array_slice($setting, 2));
             }
         }
-        return $objetArray;
+        return $objectArray;
     }
+
 }

@@ -7,7 +7,7 @@ use Elision\Core\Exception;
 use Elision\Orm\ActiveRecord;
 
 class Connection
-    extends ActiveRecord
+    //extends ActiveRecord
 {
 
     /**
@@ -53,6 +53,7 @@ class Connection
     {
         return (string)$this->config->driver;
     }
+    
     
     public function getDriver()
     {

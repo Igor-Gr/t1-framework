@@ -2,7 +2,7 @@
 
 require __DIR__ . '/autoload.php';
 
-//$db = \Elision\Orm\Model::getDbConnection();
+$db = \Elision\Orm\Model::getDbConnection();
 
 /*class User {
 
@@ -61,12 +61,71 @@ $a = 5;
 $newStr = str_replace("@", $a, $str);
 echo $newStr;*/
 
-use Elision\Helpers\Html;
+/*use Elision\Helpers\Html;
 
-echo Html::submitButton('Кнопка', ['class' => 'btn lol_new_class', 'id' => 'lol']);
+echo Html::submitButton('Кнопка', ['class' => 'btn lol_new_class', 'id' => 'lol']);*/
 
-$patern = '/^[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/';
+// v$user->find()->asArray()->where(['id' => '25'])->all();
 
-$p = preg_match($patern, 'nomidkkfefef@dwdwdw.ru');
 
-echo $p;
+/*$user = new \protect\Models\Users();
+
+
+$user2 = $user->find()->where(['id' => 1])->all();
+
+var_dump($user2);
+echo "<br>";
+
+$user2->login = 'qwerty';
+
+var_dump($user);*/
+
+
+/*$user = \protect\Models\Users::find()->where(['id'=>1])->all();
+
+var_dump($user);*/
+
+/*$start = microtime(true);
+for ($i = 0; $i < 99999999; $i++) {
+
+}
+$time = microtime(true) - $start;
+printf('Скрипт выполнялся %.4F сек.', $time);
+
+echo "<br>";
+
+echo memory_get_usage() . ' байт';*/
+
+/*$user = new \protect\Models\Users();
+
+$user->login = 'fwefegfw';
+$user->email = 'fweregfw';
+
+$user->update(['id'=>3]);*/
+
+/*$user = new \protect\Models\Users();
+
+var_dump($user->findOne(['id'=>1]));*/
+
+/*$conf = \Elision\Core\Config::getConfig();
+
+echo $conf->url;*/
+
+//var_dump(\Elision\Web\Images::joinImg('files/19f8ab34_001.jpg', 'files/19f8ab34_001.jpg'));
+
+$conf = new \protect\Models\Config();
+
+$conf->update(['id'=>1]);
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -49,4 +49,9 @@ class Request
         }
         return $model;
     }
+    
+    public static function getHomeUrl()
+    {
+        return "/";
+    }
 }

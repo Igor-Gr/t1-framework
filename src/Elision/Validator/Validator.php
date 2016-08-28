@@ -11,7 +11,8 @@ class Validator
         'string' => 'Elision\Validator\StringValidator',
         'email' => 'Elision\Validator\EmailValidator',
         'required' => 'Elision\Validator\RequiredValidator',
-        'coincidence' => 'Elision\Validator\CoincidenceValidator'
+        'coincidence' => 'Elision\Validator\CoincidenceValidator',
+        'unique' => 'Elision\Validator\UniqueValidator'
     ];
 
     public function createValidator($type, $model, $attributes, $params = [])
@@ -20,6 +21,8 @@ class Validator
             $validatorPath = $this->hasValidator($type);
             $validator = new $validatorPath;
             return $validator->validate($model, $attributes, $params);
+        } else {
+            return $model->$type();
         }
     }
 
@@ -30,6 +33,7 @@ class Validator
                 return $v;
             }
         }
+        return false;
     }
 
     public function getValue($model, $attribute)

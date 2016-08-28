@@ -1,7 +1,7 @@
 <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="/index/default">Главная</a></li>
-    <li role="presentation"><a href="/index/signup">Регестрция</a></li>
-    <li role="presentation"><a href="#">Messages</a></li>
+    <li role="presentation" class="active"><a href="/Index/Default">Главная</a></li>
+    <li role="presentation"><a href="/Index/Signup">Регестрция</a></li>
+    <li role="presentation"><a href="/Index/Login">Авторизация</a></li>
 </ul>
 
 <div class="container">
@@ -9,11 +9,11 @@
     <?php if (isset($_SESSION['logged_user'])) : ?>
         Авторизован!
         <br>
-        Привет, <?php echo $_SESSION['logged_user'] ?> <br><br> <a href="/lc/main">Личный кабинет</a>
+        Привет, <?php echo $_SESSION['logged_user'] ?> <br><br> <a href="/index/lc">Личный кабинет</a>
         <hr>
-        <a href="/register/out">Выйти</a>
+        <a href="/index/out">Выйти</a>
     <?php else : ?>
-        <a href="/register/login">Авторизация</a>
+        <a href="/index/login">Авторизация</a>
         <br>
         <a href="/index/signup">Регестрация</a>
 

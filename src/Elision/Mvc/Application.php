@@ -16,4 +16,5 @@ class Application
 	{
 		$route = Router::instance()->route();
 	}
+	
 }

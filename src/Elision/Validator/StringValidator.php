@@ -3,13 +3,15 @@
 
 namespace Elision\Validator;
 
+use Elision\Messages\Errors;
+use Elision\Messages\Message;
 
 class StringValidator
     extends Validator
 {
 
 
-    public $message = [];
+    public $message;
     public $value;
     public $valid = true;
     public $field;
@@ -51,32 +53,29 @@ class StringValidator
                        if ($v > mb_strlen($value)) {
 
                            if (!empty($params['message']))
-                               $this->message[] = $params['message'];
-                           else $this->message[] = 'min_error';
+                               $this->message = $params['message'];
+                           else $this->message = 'min_error';
                            $this->valid = false;
                            $this->value = $v;
+                           Errors::$errors[] = Message::parseMessages($this->message, $this->value, $this->field);
                        }
                         break;
                     case 'max':
                         if ($v < mb_strlen($value)) {
 
                             if (!empty($params['message']))
-                                $this->message[] = $params['message'];
-                            else $this->message[] = 'max_error';
+                                $this->message = $params['message'];
+                            else $this->message = 'max_error';
                             $this->valid =  false;
                             $this->value = $v;
+                            Errors::$errors[] = Message::parseMessages($this->message, $this->value, $this->field);
                         }
                     break;
                 }
             }
         }
 
-        return [
-            $this->valid,
-            $this->message,
-            $this->value,
-            $this->field
-        ];
+        return $this->valid;
     }
 
 }

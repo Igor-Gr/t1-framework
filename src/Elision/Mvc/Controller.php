@@ -2,6 +2,9 @@
 
 namespace Elision\Mvc;
 
+use Elision\Http\Request;
+use Elision\Http\Response;
+
 abstract class Controller
 {
     
@@ -22,5 +25,15 @@ abstract class Controller
         $methodName = 'action' . $action;
         $this->beforeAction();
         return $this->$methodName();
+    }
+
+    public function goHome()
+    {
+        Response::redirect(Request::getHomeUrl());
+    }
+
+    public function getMemory()
+    {
+        return memory_get_usage() . ' байт';
     }
 }
